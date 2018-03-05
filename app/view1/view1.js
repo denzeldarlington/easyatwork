@@ -10,5 +10,19 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', [function() {
-
+    var bookList = [{
+        title: 'Book 1',
+        image: '',
+        description: 'This is a funny book'
+    },
+    {
+        title: 'Book 2',
+        image: '',
+        description: 'This is a sci-fi book'
+    },
+    {
+        title: 'Book 3',
+        image: '',
+        description: 'This is a factual book'
+    }]
 }]);
