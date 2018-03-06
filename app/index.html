@@ -3,11 +3,32 @@
 <head>
   <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
-  <link href="css/main.css" rel="stylesheet" />
+  <link href="app.css" rel="stylesheet" />
 
   <!-- Include the AngularJS library -->
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
 </head>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<style>
+  body {
+    padding-top: 50px;
+  }
+  #divTotal{
+    background-color: green;
+  }
+  .affix{
+    right: 0px;
+  }
+  .affix-top{
+    right: 0px;
+    position: fixed;
+  }
+</style>
 <body ng-app="myApp">
 <div class="header">
   <div class="container">
@@ -18,11 +39,82 @@
 <div class="main" ng-controller="MainController">
   <div class="container">
 
-    <h1>  </h1>
+    <h1> <h1> Easy Book Store by Alex n Darlington  </h1> </h1>
+    <div class="row">
+
+      <div class="col-xs-7 col-md-8 col-sm-8 col-lg-8">
+
+      </div>
+
+      <div class="col-xs-5 col-md-4 col-sm-4 col-lg-4">
+
 
   </div>
 </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Thriller</h3>
+      </div>
+      <div class="panel-body">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optradio">Book 1</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optradio">Book 2</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="optradio">Book 3</label>
+        </div>
+      </div>
+    </div>
 
+    <div class="row">
+
+      <div class="col-xs-7 col-md-8 col-sm-8 col-lg-8">
+
+      </div>
+
+      <div class="col-xs-5 col-md-4 col-sm-4 col-lg-4">
+
+
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Crime</h3>
+      </div>
+      <div class="panel-body">
+        <div class="radio">
+          <label>
+            <img src="https://prodimage.images-bn.com/pimages/9780062691620_p0_v5_s192x300.jpg" alt="Flowers in Chania"> <input type="radio" name="optradio">Book 1</label>
+        </div>
+        <div class="radio">
+          <label>
+            <img src="https://prodimage.images-bn.com/pimages/9780316338868_p0_v1_s192x300.jpg" alt="Flowers in Chania"><input type="radio" name="optradio">Book 2</label>
+        </div>
+        <div class="radio">
+          <label>
+            <img src="https://prodimage.images-bn.com/pimages/9781250012302_p0_v7_s192x300.jpg" alt="Flowers in Chania"> <input type="radio" name="optradio">Book 3</label>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div id="divTotal" class="panel-heading">
+        <h3 class="panel-title">Total</h3>
+      </div>
+      <div class="panel-body">
+        <h2>Kr 149,-</h2>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href="#/checkout" class="btn btn-danger">Checkout <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+
+      </a>
+    </div>
 <div class="footer">
   <div class="container">
     <h2>Available for iPhone and Android.</h2>
