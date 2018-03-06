@@ -9,7 +9,7 @@
 
     <div style="align-content: right">
         <p>Number of item in cart: {{thisCart.length}}</p>
-        <button ng-if="thisCart.length > 0" ng-click="console.log('Clicked')">Check out</button>
-        <button ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+        <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
+        <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
     </div>
 </div>

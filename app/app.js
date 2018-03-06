@@ -13,17 +13,4 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 
   $routeProvider.otherwise({redirectTo: '/view1'});
 
-}])
-
-.factory('shoppingCart', function() {
-  var cart = [];
-
-  return {
-    getCart: function() {
-      return cart;
-    },
-    setCart: function(_cart) {
-      cart = _cart;
-    }
-  };
-});
+}]);

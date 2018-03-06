@@ -9,25 +9,17 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', function(shoppingCart, $scope) {
-    $scope.books = [{
-        title: 'Book 1',
-        image: '',
-        description: 'This is a funny book',
-        price: 19.99
-    },
-    {
-        title: 'Book 2',
-        image: '',
-        description: 'This is a sci-fi book',
-        price: 14.99
-    },
-    {
-        title: 'Book 3',
-        image: '',
-        description: 'This is a factual book',
-        price: 9.99
-    }];
+.controller('View1Ctrl', ['books', 'shoppingCart', '$scope', '$location', function(books, shoppingCart, $scope, $location) {
+    books.load().success(function (data, status, headers, config) {
+        $scope.books = data;
+    }).error(function(data, status, headers, config) {
+        console.error(data, status, headers, config);
+        if(status === 404) {
+            window.alert('Not found');
+        } else {
+            window.alert('Unknown Error');
+        }
+    });
 
     $scope.thisCart = shoppingCart.getCart();
 
@@ -37,11 +29,12 @@ angular.module('myApp.view1', ['ngRoute'])
     };
 
     $scope.checkOut = function () {
-
+        var url = 'view2'
+        $location.url(url);
     };
 
     $scope.emptyCart = function () {
         $scope.thisCart = [];
         shoppingCart.setCart($scope.thisCart);
     };
-});
+}]);

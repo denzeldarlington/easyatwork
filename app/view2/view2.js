@@ -9,18 +9,23 @@ angular.module('myApp.view2', ['ngRoute'])
   });
 }])
 
-.controller('View2Ctrl', function(shoppingCart, $scope) {
+.controller('View2Ctrl', ['shoppingCart', '$scope', function(shoppingCart, $scope) {
     $scope.thisCart = shoppingCart.getCart();
     $scope.totalSum = 0;
 
     $scope.getSum = function() {
         $scope.total = 0;
 
-        for (var item in $scope.thisCart) {
-            $scope.total += item.price;
-        }
+        $scope.thisCart.forEach(function (item) {
+          $scope.total += item.price;
+        });
 
         return $scope.total;
     }
 
-});
+    $scope.emptyCart = function () {
+        $scope.thisCart = [];
+        shoppingCart.setCart($scope.thisCart);
+    };
+
+}]);
