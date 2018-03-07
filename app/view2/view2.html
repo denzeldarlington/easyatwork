@@ -1,5 +1,10 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+
+
+<p>Number of items in cart: {{thisCart.length}}</p>
+
+<div ng-repeat="item in thisCart track by $index">
+  <p>{{item.title}} : {{item.price | currency}}</p>
+
+</div>
+
+<p>Total sum: {{getSum() | currency}}</p>
