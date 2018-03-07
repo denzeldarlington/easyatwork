@@ -1,6 +1,6 @@
 
-
-  <div class="shopping-cart row">
+<div class="col-sm-4" style="background-color:lavender;">
+  <div class="row">
     <h3>Number of items in cart: {{ cartAmount }}</h3>
 
     <div class="column rowItem">Item</div>
@@ -20,3 +20,4 @@
     <p>Total sum: {{getSum() | currency}}</p>
     <md-button class="md-raised" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</md-button>
   </div>
+</div>
