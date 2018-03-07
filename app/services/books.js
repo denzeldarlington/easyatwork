@@ -1,4 +1,4 @@
-'use strict';
+<'use strict';
 
 angular.module('myApp')
     .factory('books', function ($http) {

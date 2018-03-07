@@ -1,7 +1,83 @@
+<!doctype html>
+<html>
+<head>
 
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+    <link href="app.css" rel="stylesheet" />
+    <!-- Include the AngularJS library -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Our EASY BOOK store</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<style>
+    body {
+        padding-top: 50px;
+    }
+    #divTotal{
+        background-color: green;
+    }
+    .affix{
+        right: 0px;
+    }
+    .affix-top{
+        right: 0px;
+        position: fixed;
+    }
+</style>
+<body ng-app="myApp">
+<div class="header">
+    <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Easy Books</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="#">Store</a>
+                    <a class="nav-link" href="#">Cart</a>
+                    <a class="nav-link" href="#">About</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+
+    </div>
+</div>
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-xs-7 col-md-8 col-sm-8 col-lg-8">
+
+            </div>
+
+            <div class="col-xs-5 col-md-4 col-sm-4 col-lg-4">
+
+
+            </div>
 <div>
+    <div class="col-sm-4" style="background-color:lavender;">
     <div ng-repeat="book in books">
         <h3 ng-bind="book.title"></h3>
+        <p><img src="https://prodimage.images-bn.com/pimages/9780062691620_p0_v5_s192x300.jpg" alt="Flowers in Chania"></p>
         <p>Description: {{book.description}}</p>
         <p>Price: {{book.price | currency}}</p>
         <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
@@ -9,7 +85,141 @@
 
     <div style="align-content: right">
         <p>Number of item in cart: {{thisCart.length}}</p>
-        <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
+        <button class="btn btn-danger" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
         <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
-    </div>
 </div>
+        </div>
+
+    <div>
+        <div class="col-sm-4" style="background-color:lavender;">
+            <div ng-repeat="book in books">
+                <h3 ng-bind="book.title"></h3>
+                <p><img src="https://prodimage.images-bn.com/pimages/9781250012302_p0_v7_s192x300.jpg"  alt="Flowers in Chania"></p>
+                <p>Description: {{book.description}}</p>
+                <p>Price: {{book.price | currency}}</p>
+                <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
+            </div>
+
+            <div style="align-content: right">
+                <p>Number of item in cart: {{thisCart.length}}</p>
+                <button class="btn btn-danger" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
+                <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+            </div>
+        </div>
+        <div>
+            <div class="col-sm-4" style="background-color:lavender;">
+                <div ng-repeat="book in books">
+                    <h3 ng-bind="book.title"></h3>
+                    <p><img src="https://prodimage.images-bn.com/pimages/9780525618881_p0_v2_s192x300.jpg"></p>
+                    <p>Description: {{book.description}}</p>
+                    <p>Price: {{book.price | currency}}</p>
+                    <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
+                </div>
+
+                <div style="align-content: right">
+                    <p>Number of item in cart: {{thisCart.length}}</p>
+                    <button class="btn btn-danger" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
+                    <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-7 col-md-8 col-sm-8 col-lg-8">
+
+                </div>
+
+                <div class="col-xs-5 col-md-4 col-sm-4 col-lg-4">
+
+                </div>
+
+                    <div class="col-sm-4" style="background-color:lavender;">
+
+                        <div ng-repeat="book in books">
+                            <h3 ng-bind="book.title"></h3>
+                            <p><img src="https://prodimage.images-bn.com/pimages/9780312577230_p0_v4_s192x300.jpg"></p>
+                            <p>Description: {{book.description}}</p>
+                            <p>Price: {{book.price | currency}}</p>
+                            <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
+                        </div>
+
+                        <div style="align-content: right">
+                            <p>Number of item in cart: {{thisCart.length}}</p>
+                            <button class="btn btn-danger" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
+                            <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="col-sm-4" style="background-color:lavender;">
+                            <div ng-repeat="book in books">
+                                <h3 ng-bind="book.title"></h3>
+                                <p><img src="https://prodimage.images-bn.com/pimages/9781538746806_p0_v1_s192x300.jpg"></p>
+                                <p>Description: {{book.description}}</p>
+                                <p>Price: {{book.price | currency}}</p>
+                                <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
+                            </div>
+
+                            <div style="align-content: right">
+                                <p>Number of item in cart: {{thisCart.length}}</p>
+                                <button class="btn btn-danger" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
+                                <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+                            </div>
+                        </div>
+
+                            <div class="col-sm-4" style="background-color:lavender;">
+                                <div ng-repeat="book in books">
+                                    <h3 ng-bind="book.title"></h3>
+                                    <p><img src="https://prodimage.images-bn.com/pimages/9780312367541_p0_v2_s192x300.jpg"></p>
+                                    <p>Description: {{book.description}}</p>
+                                    <p>Price: {{book.price | currency}}</p>
+                                    <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
+                                </div>
+
+                                <div style="align-content: right">
+                                    <p>Number of item in cart: {{thisCart.length}}</p>
+                                    <button class="btn btn-danger" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
+                                    <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+                                </div>
+                            </div>
+                    </div>
+
+            </div>
+
+
+            <div class="text-center">
+            <div class="footer">
+                <div class="container">
+                    <h1> Easy Book Store by Alex n Darlington </h1>
+                    <h2>Available for iPhone and Android.</h2>
+                    <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/app-store.png" width="120px" />
+                    <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/google-play.png" width="110px" />
+                </div>
+            </div>
+
+
+
+            <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+            <div ng-view></div>
+
+
+            <!-- In production use:
+            <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+            -->
+            <script src="bower_components/angular/angular.js"></script>
+            <script src="bower_components/angular-route/angular-route.js"></script>
+            <script src="app.js"></script>
+            <script src="view1/view1.js"></script>
+            <script src="view2/view2.js"></script>
+            <script src="View3/view3.js"></script>
+            <script src="services/books.js"></script>
+            <script src="services/shoppingCart.js"></script>
+            <script src="components/version/version.js"></script>
+            <script src="components/version/version-directive.js"></script>
+            <script src="components/version/interpolate-filter.js"></script>
+
+</body>
+</html>
