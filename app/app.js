@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.view1',
   'myApp.view2',
+  'myApp.view3',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
@@ -12,17 +13,4 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 
   $routeProvider.otherwise({redirectTo: '/view1'});
 
-}])
-
-.factory('shoppingCart', function() {
-  var cart = [];
-
-  return {
-    getCart: function() {
-      return cart;
-    },
-    setCart: function(_cart) {
-      cart = _cart;
-    }
-  };
-});
+}]);

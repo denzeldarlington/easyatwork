@@ -1,13 +1,15 @@
 
-<div ng-repeat="book in books">
-    <h3 ng-bind="book.title"></h3>
-    <p>Description: {{book.description}}</p>
-    <p>Price: {{book.price | currency}}</p>
-    <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
-</div>
+<div>
+    <div ng-repeat="book in books">
+        <h3 ng-bind="book.title"></h3>
+        <p>Description: {{book.description}}</p>
+        <p>Price: {{book.price | currency}}</p>
+        <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
+    </div>
 
-<div style="align-content: right">
-    <p>Number of item in cart: {{thisCart.length}}</p>
-    <a href="#!/view2"><button ng-if="thisCart.length > 0">Check out</button></a>
-    <button ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+    <div style="align-content: right">
+        <p>Number of item in cart: {{thisCart.length}}</p>
+        <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
+        <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+    </div>
 </div>

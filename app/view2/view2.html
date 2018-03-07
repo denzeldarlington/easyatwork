@@ -8,3 +8,4 @@
 </div>
 
 <p>Total sum: {{getSum() | currency}}</p>
+<button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
