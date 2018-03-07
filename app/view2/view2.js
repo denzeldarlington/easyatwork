@@ -11,16 +11,16 @@ angular.module('myApp.view2', ['ngRoute'])
 
 .controller('View2Ctrl', ['shoppingCart', '$scope', function(shoppingCart, $scope) {
     $scope.thisCart = shoppingCart.getCart();
-    $scope.totalSum = 0;
+    $scope.cartAmount = shoppingCart.getAmount();
 
     $scope.getSum = function() {
-        $scope.total = 0;
+        var total = 0;
 
         $scope.thisCart.forEach(function (item) {
-          $scope.total += item.price;
+            total += item.price * item.amount;
         });
 
-        return $scope.total;
+        return total;
     };
 
     $scope.emptyCart = function () {

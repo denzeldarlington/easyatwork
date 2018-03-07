@@ -10,26 +10,40 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', ['books', 'shoppingCart', '$scope', '$location', function(books, shoppingCart, $scope, $location) {
-    books.load().success(function (data, status, headers, config) {
-        $scope.books = data;
-    }).error(function(data, status, headers, config) {
-        console.error(data, status, headers, config);
-        if(status === 404) {
-            window.alert('Not found');
-        } else {
-            window.alert('Unknown Error');
-        }
+   books.load().then(function (listOfBooks) {
+        $scope.allBooks = listOfBooks.data;
     });
 
     $scope.thisCart = shoppingCart.getCart();
 
     $scope.addToCart = function (book) {
-        $scope.thisCart.push(book);
+        var inCart = false;
+        var index = 0;
+
+        if ($scope.thisCart.length < 1) {
+            $scope.thisCart.push(angular.copy(book));
+            $scope.thisCart[0].amount = 1;
+        } else {
+            while (index < $scope.thisCart.length) {
+                if(book.title === $scope.thisCart[index].title) {
+                    $scope.thisCart[index].amount += 1;
+                    inCart = true;
+                }
+
+                ++index;
+            }
+
+            if(!inCart) {
+                $scope.thisCart.push(angular.copy(book));
+                $scope.thisCart[$scope.thisCart.length - 1].amount = 1;
+            }
+        }
+
         shoppingCart.setCart($scope.thisCart);
     };
 
     $scope.checkOut = function () {
-        var url = 'view2'
+        var url = 'view2';
         $location.url(url);
     };
 
@@ -37,4 +51,8 @@ angular.module('myApp.view1', ['ngRoute'])
         $scope.thisCart = [];
         shoppingCart.setCart($scope.thisCart);
     };
+
+    $scope.cartAmount = function () {
+        return shoppingCart.getAmount();
+    }
 }]);

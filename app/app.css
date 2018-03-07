@@ -129,3 +129,39 @@ html, body {
 .footer img {
   margin: 0 10px;
 }
+
+.md-button.md-raised:not([disabled]) {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.shopping-cart {
+  background-color: #DDDDDD;
+  margin-left: 10px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.rowItem {
+  width: 35%;
+}
+
+.rowPrice {
+  width: 20%;
+}
+
+.rowAmount {
+  width: 10%;
+}
+
+.rowTotal {
+  width: 20%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

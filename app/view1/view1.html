@@ -1,6 +1,6 @@
 
 <div>
-    <div ng-repeat="book in books">
+    <div ng-repeat="book in allBooks track by $index">
         <h3 ng-bind="book.title"></h3>
         <p>Description: {{book.description}}</p>
         <p>Price: {{book.price | currency}}</p>
@@ -8,7 +8,7 @@
     </div>
 
     <div style="align-content: right">
-        <p>Number of item in cart: {{thisCart.length}}</p>
+        <p>Number of item in cart: {{cartAmount()}}</p>
         <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="checkOut()">Check out</button>
         <button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
     </div>
