@@ -21,7 +21,7 @@ angular.module('myApp.view2', ['ngRoute'])
         });
 
         return $scope.total;
-    }
+    };
 
     $scope.emptyCart = function () {
         $scope.thisCart = [];
