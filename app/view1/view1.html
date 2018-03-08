@@ -18,6 +18,7 @@
     <div ng-repeat="book in allBooks">
         <h3 ng-bind="book.title"></h3>
 
+        <img ng-src="{{ book.image }}" />
 
         <p>Description: {{book.description}}</p>
         <p>Price: {{book.price | currency}}</p>
