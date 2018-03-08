@@ -1,18 +1,36 @@
 [{
   "title": "Book 1",
-  "image": "",
+  "image": "https://prodimage.images-bn.com/pimages/9780062691620_p0_v5_s192x300.jpg",
   "description": "This is a funny book",
   "price": 19.99
 },
 {
   "title": "Book 2",
-  "image": "",
+  "image": "https://prodimage.images-bn.com/pimages/9781250012302_p0_v7_s192x300.jpg",
   "description": "This is a sci-fi book",
   "price": 14.99
 },
 {
   "title": "Book 3",
-  "image": "",
+  "image": "https://prodimage.images-bn.com/pimages/9780525618881_p0_v2_s192x300.jpg",
   "description": "This is a factual book",
   "price": 9.99
-}]
+},
+{
+  "title": "Book 4",
+  "image": "https://prodimage.images-bn.com/pimages/9780062691620_p0_v5_s192x300.jpg",
+  "description": "This is a funny book",
+  "price": 19.99
+},
+  {
+    "title": "Book 5",
+    "image": "https://prodimage.images-bn.com/pimages/9781250012302_p0_v7_s192x300.jpg",
+    "description": "This is a sci-fi book",
+    "price": 14.99
+  },
+  {
+    "title": "Book 6",
+    "image": "https://prodimage.images-bn.com/pimages/9780525618881_p0_v2_s192x300.jpg",
+    "description": "This is a factual book",
+    "price": 9.99
+  }]
