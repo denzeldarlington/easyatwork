@@ -11,10 +11,17 @@
 
             <div class="col-xs-5 col-md-4 col-sm-4 col-lg-4">
 
-
             </div>
-<div>
-    <div class="col-sm-4" style="background-color:lavender;">
+
+
+
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                        </div>
+                    </div>
+
     <div ng-repeat="book in allBooks">
         <h3 ng-bind="book.title"></h3>
 
@@ -24,7 +31,6 @@
         <p>Price: {{book.price | currency}}</p>
         <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
     </div>
-    </div>
+    </div><br>
     <button class="btn btn-danger" ng-click="checkOut()">Checkout <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> </button>
 </div>
-        </div>

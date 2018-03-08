@@ -11,7 +11,6 @@ angular.module('myApp')
     });
 
 
-
 var exampleApp = angular.module('exampleApp',['sap.imageloader']);
 
 exampleApp.controller('ExampleController', ['$scope', 'ImageLoader', function($scope, ImageLoader) {
