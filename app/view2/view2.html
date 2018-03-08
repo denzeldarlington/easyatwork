@@ -8,6 +8,7 @@
     <div class="column rowAmount">Amount</div>
     <div class="column rowTotal">Total Price</div>
 
+
     <div ng-repeat="item in thisCart track by $index">
       <div class="column rowItem" ng-bind="item.title"></div>
       <div class="column rowPrice">{{item.price | currency}}</div>
@@ -16,8 +17,10 @@
     </div>
   </div>
 
-  <div class="sum">
+  <div class="emptyCart" ng-if="thisCart.length < 1"><p>The cart is empty.</p></div>
+
+  <div class="row sum">
     <p>Total sum: {{getSum() | currency}}</p>
-    <md-button class="md-raised" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</md-button>
+    <button ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
   </div>
 </div>

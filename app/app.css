@@ -130,10 +130,6 @@ html, body {
   margin: 0 10px;
 }
 
-.md-button.md-raised:not([disabled]) {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-}
-
 .shopping-cart {
   background-color: #DDDDDD;
   margin-left: 10px;
@@ -141,6 +137,14 @@ html, body {
 
 .column {
   float: left;
+  padding: 10px;
+}
+
+.row {
+  padding: 10px;
+}
+
+.emptyCart {
   padding: 10px;
 }
 
