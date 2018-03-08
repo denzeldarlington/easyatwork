@@ -150,9 +150,16 @@ html, body {
 
 th, td {
   padding: 5px;
-  min-width: 100px;
   max-width: 400px;
   text-align: left;
+}
+
+td#amount {
+  min-width: 125px;
+}
+
+td#cartImg {
+  max-width: 50px;
 }
 
 .emptyCart {
@@ -165,11 +172,19 @@ th, td {
 
 div.fixed {
   background-color: white;
-  alignment: center;
   position: fixed;
   bottom: 5px;
   right: 5px;
   max-width: 300px;
   max-height: 100px;
   border: 3px solid black;
+}
+
+img#cart {
+  max-width: 50px;
+  max-height: 110px;
+}
+
+.item {
+  float: left;
 }

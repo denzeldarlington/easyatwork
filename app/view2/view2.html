@@ -6,6 +6,7 @@
   <div class="cart">
     <table style="overflow-x:auto;">
       <tr id="cartTable">
+        <th></th>
         <th>Item</th>
         <th>Price</th>
         <th>Amount</th>
@@ -14,9 +15,10 @@
 
 
       <tr ng-repeat="item in getCart() track by $index">
-        <td ng-bind="item.title"></td>
-        <td>{{item.price | currency}}</td>
-        <td style="min-width: 125px">
+        <td id="cartImg"><img ng-src="{{ item.image }}" id="cart"></td>
+        <td> {{ item.title }} </td>
+        <td> {{item.price | currency}} </td>
+        <td id="amount">
           <md-button class="md-fab md-mini md-primary" ng-disabled="item.amount <= 1" ng-click="decrease(item)">-</md-button>
           {{item.amount}}
           <md-button class="md-fab md-mini md-primary" ng-click="increase(item)">+</md-button>
