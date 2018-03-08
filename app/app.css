@@ -129,3 +129,43 @@ html, body {
 .footer img {
   margin: 0 10px;
 }
+
+.shopping-cart {
+  background-color: #DDDDDD;
+  margin-left: 10px;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.row {
+  padding: 10px;
+}
+
+.emptyCart {
+  padding: 10px;
+}
+
+.rowItem {
+  width: 35%;
+}
+
+.rowPrice {
+  width: 20%;
+}
+
+.rowAmount {
+  width: 10%;
+}
+
+.rowTotal {
+  width: 20%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

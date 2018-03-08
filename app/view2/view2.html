@@ -1,11 +1,26 @@
 
+<div class="col-sm-4" style="background-color:lavender;">
+  <div class="row">
+    <h3>Number of items in cart: {{ cartAmount }}</h3>
 
-<p>Number of items in cart: {{thisCart.length}}</p>
+    <div class="column rowItem">Item</div>
+    <div class="column rowPrice">Price</div>
+    <div class="column rowAmount">Amount</div>
+    <div class="column rowTotal">Total Price</div>
 
-<div ng-repeat="item in thisCart track by $index">
-  <p>{{item.title}} : {{item.price | currency}}</p>
 
+    <div ng-repeat="item in thisCart track by $index">
+      <div class="column rowItem" ng-bind="item.title"></div>
+      <div class="column rowPrice">{{item.price | currency}}</div>
+      <div class="column rowAmount">x{{item.amount}}</div>
+      <div class="column rowTotal">{{item.price * item.amount | currency}}</div>
+    </div>
+  </div>
+
+  <div class="emptyCart" ng-if="thisCart.length < 1"><p>The cart is empty.</p></div>
+
+  <div class="row sum">
+    <p>Total sum: {{getSum() | currency}}</p>
+    <button ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+  </div>
 </div>
-
-<p>Total sum: {{getSum() | currency}}</p>
-<button class="btn btn-info" ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>

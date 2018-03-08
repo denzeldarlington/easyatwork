@@ -1,11 +1,8 @@
 <!doctype html>
-<!--suppress CssUnusedSymbol -->
+
 <html>
 <head>
-
-  <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
-
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,39 +16,18 @@
 
 </head>
 
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-<!--suppress CssUnusedSymbol -->
-<style>
-  body {
-    padding-top: 50px;
-  }
-  #divTotal{
-    background-color: green;
-  }
-  .affix{
-    right: 0px;
-  }
-  .affix-top{
-    right: 0px;
-    position: fixed;
-  }
-</style>
 <body ng-app="myApp">
 
-<div class="header">
-  <ul class="menu">
-    <li><a href="#!/view1">Store</a></li>
-    <li><a href="#!/view2">Cart</a></li>
-    <li><a href="#!/view3">About</a></li>
-  </ul>
-  <div class="container">
-    <h1>Easy Books</h1>
+  <div class="header">
+    <ul class="menu">
+      <li><a href="#!/view1">Store</a></li>
+      <li><a href="#!/view2">Cart</a></li>
+      <li><a href="#!/view3">About</a></li>
+    </ul>
+    <div class="container">
+      <h1>Easy Books</h1>
+    </div>
   </div>
-</div>
 
 <div class="main" >
   <div class="container">
@@ -65,8 +41,8 @@
 
       <div class="col-xs-5 col-md-4 col-sm-4 col-lg-4">
 
+  <div class="main">
 
-  </div>
 </div>
 
 
@@ -81,31 +57,26 @@
   </div>
 </div>
 
-  <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.7/angular-material.min.js"></script>
 
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="View3/view3.js"></script>
+  <script src="services/books.js"></script>
+  <script src="services/shoppingCart.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
 
-
-    <!-- Angular Material requires Angular.js Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-messages.min.js"></script>
-    <!-- Angular Material Library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.7/angular-material.min.js"></script>
-
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="app.js"></script>
-    <script src="view1/view1.js"></script>
-    <script src="view2/view2.js"></script>
-    <script src="View3/view3.js"></script>
-    <script src="services/books.js"></script>
-    <script src="services/shoppingCart.js"></script>
-    <script src="components/version/version.js"></script>
-    <script src="components/version/version-directive.js"></script>
-    <script src="components/version/interpolate-filter.js"></script>
 
 </body>
 </html>
