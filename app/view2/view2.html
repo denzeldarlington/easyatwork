@@ -1,26 +1,38 @@
 
-<div class="col-sm-4" style="background-color:lavender;">
-  <div class="row">
-    <h3>Number of items in cart: {{ cartAmount }}</h3>
+<div class="cartContainer">
 
-    <div class="column rowItem">Item</div>
-    <div class="column rowPrice">Price</div>
-    <div class="column rowAmount">Amount</div>
-    <div class="column rowTotal">Total Price</div>
+  <h3>Number of items in cart: {{ getAmount() }}</h3>
+
+  <div class="cart">
+    <table style="overflow-x:auto;">
+      <tr id="cartTable">
+        <th>Item</th>
+        <th>Price</th>
+        <th>Amount</th>
+        <th>Total Price</th>
+      </tr>
 
 
-    <div ng-repeat="item in thisCart track by $index">
-      <div class="column rowItem" ng-bind="item.title"></div>
-      <div class="column rowPrice">{{item.price | currency}}</div>
-      <div class="column rowAmount">x{{item.amount}}</div>
-      <div class="column rowTotal">{{item.price * item.amount | currency}}</div>
-    </div>
+      <tr ng-repeat="item in getCart() track by $index">
+        <td ng-bind="item.title"></td>
+        <td>{{item.price | currency}}</td>
+        <td style="min-width: 125px">
+          <md-button class="md-fab md-mini md-primary" ng-disabled="item.amount <= 1" ng-click="decrease(item)">-</md-button>
+          {{item.amount}}
+          <md-button class="md-fab md-mini md-primary" ng-click="increase(item)">+</md-button>
+        </td>
+        <td>{{item.price * item.amount | currency}}</td>
+        <td><md-button class="md-raised" ng-click="remove(item)">Remove</md-button></td>
+      </tr>
+
+    </table>
   </div>
 
-  <div class="emptyCart" ng-if="thisCart.length < 1"><p>The cart is empty.</p></div>
+  <div class="emptyCart" ng-if="getCart().length < 1">The cart is empty.</div>
 
-  <div class="row sum">
-    <p>Total sum: {{getSum() | currency}}</p>
-    <button ng-if="thisCart.length > 0" ng-click="emptyCart()">Empty cart</button>
+  <div class="fixed cartTotal">
+    <p align="center">Total sum: {{getSum() | currency}}</p>
+    <md-button class="md-raised" ng-disabled="getCart().length < 1" ng-click="emptyCart()">Empty cart</md-button>
+    <md-button class="md-raised" ng-disabled="true" ng-click="emptyCart()">Buy</md-button>
   </div>
 </div>
