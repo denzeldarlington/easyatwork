@@ -15,14 +15,8 @@
 
 
 
-            <div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                        </div>
-                    </div>
 
-    <div ng-repeat="book in allBooks">
+    <div ng-repeat="book in allBooks"><div style="float: left;">
         <h3 ng-bind="book.title"></h3>
 
         <img ng-src="{{ book.image }}" />
@@ -31,6 +25,7 @@
         <p>Price: {{book.price | currency}}</p>
         <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
     </div>
-    </div><br>
+    </div><br><br>
+        </div><br><br></div><br><br>
     <button class="btn btn-danger" ng-click="checkOut()">Checkout <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> </button>
 </div>
