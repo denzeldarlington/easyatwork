@@ -185,6 +185,6 @@ img#cart {
   max-height: 110px;
 }
 
-.item {
-  float: left;
+md-content {
+  padding: 10px;
 }
