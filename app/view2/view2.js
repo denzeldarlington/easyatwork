@@ -10,22 +10,40 @@ angular.module('myApp.view2', ['ngRoute'])
 }])
 
 .controller('View2Ctrl', ['shoppingCart', '$scope', function(shoppingCart, $scope) {
-    $scope.thisCart = shoppingCart.getCart();
-    $scope.cartAmount = shoppingCart.getAmount();
+
+    $scope.getCart = function () {
+        return shoppingCart.getCart();
+    };
 
     $scope.getSum = function() {
         var total = 0;
 
-        $scope.thisCart.forEach(function (item) {
+        $scope.getCart().forEach(function (item) {
             total += item.price * item.amount;
         });
 
         return total;
     };
 
+    $scope.getAmount = function () {
+        return shoppingCart.getAmount();
+    };
+
     $scope.emptyCart = function () {
-        $scope.thisCart = [];
-        shoppingCart.setCart($scope.thisCart);
+        shoppingCart.setCart([]);
+    };
+    
+    $scope.decrease = function (item) {
+        item.amount -= 1;
+    };
+
+    $scope.increase = function (item) {
+        item.amount += 1;
+    };
+
+    $scope.remove = function (item) {
+        var index = $scope.getCart().indexOf(item);
+        $scope.getCart().splice(index, 1);
     };
 
 }]);
