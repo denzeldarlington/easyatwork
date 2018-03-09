@@ -129,6 +129,17 @@ html, body {
   margin: 0 10px;
 }
 
+.container {
+  alignment: center;
+  width: auto;
+}
+
+.book {
+  padding: 2px;
+  float: left;
+  width: 250px;
+}
+
 .md-button.md-fab.md-mini {
   min-height: 10px;
   min-width: 10px;
@@ -156,7 +167,7 @@ th, td {
 }
 
 td#amount {
-  min-width: 125px;
+  min-width: 100px;
 }
 
 td#cartImg {
