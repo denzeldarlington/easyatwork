@@ -4,63 +4,89 @@
   "description": "This is a funny book",
   "price": 19.99
 },
-  {
-    "title": "Book 2",
-    "image": "https://prodimage.images-bn.com/pimages/9781250012302_p0_v7_s192x300.jpg",
-    "description": "This is a sci-fi book",
-    "price": 14.99
-  },
-  {
-    "title": "Book 3",
-    "image": "https://prodimage.images-bn.com/pimages/9780525618881_p0_v2_s192x300.jpg",
-    "description": "This is a factual book",
-    "price": 9.99
-  },
-  {
-    "title": "Book 4",
-    "image": "https://prodimage.images-bn.com/pimages/9780310353300_p0_v2_s192x300.jpg",
-    "description": "This is a funny book",
-    "price": 19.99
-  },
-  {
-    "title": "Book 5",
-    "image": "https://prodimage.images-bn.com/pimages/9780525537588_p0_v1_s192x300.jpg",
-    "description": "This is a sci-fi book",
-    "price": 14.99
-  },
-  {
-    "title": "Book 6",
-    "image": "https://prodimage.images-bn.com/pimages/9781496406170_p0_v1_s192x300.jpg",
-    "description": "This is a factual book",
-    "price": 9.99
+{
+  "title": "Book 2",
+  "image": "https://prodimage.images-bn.com/pimages/9781250012302_p0_v7_s192x300.jpg",
+  "description": "This is a sci-fi book",
+  "price": 14.99
+},
+{
+  "title": "Book 3",
+  "image": "https://prodimage.images-bn.com/pimages/9780525618881_p0_v2_s192x300.jpg",
+  "description": "This is a factual book",
+  "price": 9.99
+},
+{
+  "title": "Book 4",
+  "image": "https://prodimage.images-bn.com/pimages/9780310353300_p0_v2_s192x300.jpg",
+  "description": "This is a funny book",
+  "price": 19.99
+},
+{
+  "title": "Book 5",
+  "image": "https://prodimage.images-bn.com/pimages/9780525537588_p0_v1_s192x300.jpg",
+  "description": "This is a sci-fi book",
+  "price": 14.99
+},
+{
+  "title": "Book 6",
+  "image": "https://prodimage.images-bn.com/pimages/9781496406170_p0_v1_s192x300.jpg",
+  "description": "This is a factual book",
+  "price": 9.99
 
-  },
+},
+{
+  "title": "Book 7",
+  "image": "https://prodimage.images-bn.com/pimages/9781101884096_p0_v1_s192x300.jpg",
+  "description": "This is a sci-fi book",
+  "price": 14.99
+},
+{
+  "title": "Book 8",
+  "image": "https://prodimage.images-bn.com/pimages/9780785222682_p0_v1_s192x300.jpg",
+  "description": "This is a factual book",
+  "price": 9.99
+},
+{
+  "title": "Book 9",
+  "image": "https://prodimage.images-bn.com/pimages/9781250295446_p0_v5_s192x300.jpg",
+  "description": "This is a funny book",
+  "price": 19.99
+},
+{
+  "title": "Book 10",
+  "image": "https://prodimage.images-bn.com/pimages/9780316395441_p0_v2_s192x300.jpg",
+  "description": "This is a sci-fi book",
+  "price": 14.99
+},
+{
+  "title": "Book 11",
+  "image": "https://prodimage.images-bn.com/pimages/9780062569363_p0_v5_s192x300.jpg",
+  "description": "This is a factual book",
+  "price": 9.99
+
+}
+,
   {
-    "title": "Book 7",
-    "image": "https://prodimage.images-bn.com/pimages/9781101884096_p0_v1_s192x300.jpg",
-    "description": "This is a sci-fi book",
-    "price": 14.99
-  },
-  {
-    "title": "Book 8",
+    "title": "Book 12",
     "image": "https://prodimage.images-bn.com/pimages/9780785222682_p0_v1_s192x300.jpg",
     "description": "This is a factual book",
     "price": 9.99
   },
   {
-    "title": "Book 9",
+    "title": "Book 13",
     "image": "https://prodimage.images-bn.com/pimages/9781250295446_p0_v5_s192x300.jpg",
     "description": "This is a funny book",
     "price": 19.99
   },
   {
-    "title": "Book 10",
+    "title": "Book 14",
     "image": "https://prodimage.images-bn.com/pimages/9780316395441_p0_v2_s192x300.jpg",
     "description": "This is a sci-fi book",
     "price": 14.99
   },
   {
-    "title": "Book 11",
+    "title": "Book 15",
     "image": "https://prodimage.images-bn.com/pimages/9780062569363_p0_v5_s192x300.jpg",
     "description": "This is a factual book",
     "price": 9.99
