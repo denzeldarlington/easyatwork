@@ -85,36 +85,32 @@
 
         <ul class="flex-container">
 
-        <div ng-view></div>
+            <div ng-view></div>
 
-        <div class="footer">
-            <div class="container">
-                <h2>Available for iPhone and Android.</h2>
-                <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/app-store.png" width="120px" />
-                <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/google-play.png" width="110px" />
+            <div class="footer">
+                <div class="container">
+                    <h2>Available for iPhone and Android.</h2>
+                    <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/app-store.png"
+                         width="120px"/>
+                    <img src="https://s3.amazonaws.com/codecademy-content/projects/shutterbugg/google-play.png"
+                         width="110px"/>
+                </div>
             </div>
-        </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
+        </ul>
+        <ul class="flex-container">
 
-                <!-- Modal content-->
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Checkout</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Some text in the modal.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+                    <span class="close">&times;</span>
+                    <p>Successfullt added product to cart!</p>
                 </div>
 
             </div>
-        </div>
+    </div>
 
     </div>
         <!-- Angular Material requires Angular.js Libraries -->

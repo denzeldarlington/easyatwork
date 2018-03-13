@@ -8,10 +8,33 @@
         <p>Description: {{book.description}}</p>
         <p>Author: {{book.Author}}</p>
         <p>Price: {{book.price | currency}}</p>
-        <button class="btn btn-info" ng-click="addToCart(book)">Add to cart</button>
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+
+        </div>
+
+        <button class="btn btn-info" id="myBtn" ng-click="addToCart(book)">Add to cart</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Successfully added product to cart!</p>
+            </div>
+        </div>
     </div>
 </div>
 
 <div class="btnHolder">
     <button class="btn btn-danger" ng-click="checkOut()">Checkout <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> </button>
 </div>
+
+
