@@ -205,3 +205,8 @@ img#cart {
 md-content {
   padding: 10px;
 }
+
+.btnHolder {
+  padding-left: 15px;
+  padding-top: 100px;
+}

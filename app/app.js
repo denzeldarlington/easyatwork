@@ -13,6 +13,4 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/view1'});
-
-    var exampleApp = angular.module('exampleApp',['sap.imageloader']);
 }]);

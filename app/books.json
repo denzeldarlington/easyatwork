@@ -6,14 +6,14 @@
   "price": 19.99
 },
 {
-  "title": "Book 2",
+  "title": "Book 2: The Sequel",
   "image": "https://prodimage.images-bn.com/pimages/9781250012302_p0_v7_s192x300.jpg",
   "description": "This is a sci-fi book",
   "Author": "Haylie Pomroy",
   "price": 14.99
 },
 {
-  "title": "Book 3",
+  "title": "Book 3: The Second Sequel - This is an Insanely Long Title For a Book",
   "image": "https://prodimage.images-bn.com/pimages/9780525618881_p0_v2_s192x300.jpg",
   "description": "This is a factual book",
   "Author": "Haylie Pomroy",
@@ -71,30 +71,29 @@
   "description": "This is a factual book",
   "price": 9.99
 
-}
-,
-  {
-    "title": "Book 12",
-    "image": "https://prodimage.images-bn.com/pimages/9780785222682_p0_v1_s192x300.jpg",
-    "description": "This is a factual book",
-    "price": 9.99
-  },
-  {
-    "title": "Book 13",
-    "image": "https://prodimage.images-bn.com/pimages/9781250295446_p0_v5_s192x300.jpg",
-    "description": "This is a funny book",
-    "price": 19.99
-  },
-  {
-    "title": "Book 14",
-    "image": "https://prodimage.images-bn.com/pimages/9780316395441_p0_v2_s192x300.jpg",
-    "description": "This is a sci-fi book",
-    "price": 14.99
-  },
-  {
-    "title": "Book 15",
-    "image": "https://prodimage.images-bn.com/pimages/9780062569363_p0_v5_s192x300.jpg",
-    "description": "This is a factual book",
-    "price": 9.99
+},
+{
+  "title": "Book 12",
+  "image": "https://prodimage.images-bn.com/pimages/9780785222682_p0_v1_s192x300.jpg",
+  "description": "This is a factual book",
+  "price": 9.99
+},
+{
+  "title": "Book 13",
+  "image": "https://prodimage.images-bn.com/pimages/9781250295446_p0_v5_s192x300.jpg",
+  "description": "This is a funny book",
+  "price": 19.99
+},
+{
+  "title": "Book 14",
+  "image": "https://prodimage.images-bn.com/pimages/9780316395441_p0_v2_s192x300.jpg",
+  "description": "This is a sci-fi book",
+  "price": 14.99
+},
+{
+  "title": "Book 15",
+  "image": "https://prodimage.images-bn.com/pimages/9780062569363_p0_v5_s192x300.jpg",
+  "description": "This is a factual book",
+  "price": 9.99
 
-  }]
+}]
