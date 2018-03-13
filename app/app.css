@@ -211,6 +211,27 @@ md-content {
   padding-top: 100px;
 }
 
+.singlePrice {
+  font-size: 18px;
+  align-self: center;
+}
+
+.singleBuy {
+  padding-right: 5px;
+  align-self: center;
+}
+
+.buyContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#btm {
+  padding-bottom: 10px;
+}
+
 .flex-container {
   padding: 0;
   margin: 0;

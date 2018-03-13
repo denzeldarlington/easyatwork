@@ -9,21 +9,25 @@ angular.module('myApp.view4', ['ngRoute'])
         });
     }])
 
-    .controller('View4Ctrl', ['shoppingCart', '$scope', function(shoppingCart, $scope, $routeParams) {
-        console.log($routeParams.id);
-        console.log($routeParams.slug);
-
+    .controller('View4Ctrl', ['books', 'shoppingCart', '$scope', '$routeParams',
+    function(books, shoppingCart, $scope, $routeParams) {
         var id = parseInt($routeParams.id, 10);
+        $scope.isInCart = shoppingCart.isInCart(id);
+
 
         books.load().then(function (listOfBooks) {
             var allBooks = listOfBooks.data;
-            for(var book in allBooks) {
-                if (book.id === id) {
-                    $scope.book = book;
+            for(var i = 0; i < allBooks.length; i++) {
+                if (allBooks[i].id === id) {
+                    $scope.book = allBooks[i];
                     break;
                 }
             }
         });
+
+        $scope.add = function () {
+            console.log("added")
+        };
 
 
 
