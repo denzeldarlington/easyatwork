@@ -230,4 +230,30 @@ md-content {
 
 #btm {
   padding-bottom: 10px;
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: #FFFFFF;
+  padding: 5px;
+  width: 150px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  
 }
