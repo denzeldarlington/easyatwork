@@ -230,6 +230,7 @@ md-content {
 
 #btm {
   padding-bottom: 10px;
+}
 
 .flex-container {
   padding: 0;
@@ -255,5 +256,4 @@ md-content {
   font-weight: bold;
   font-size: 3em;
   text-align: center;
-  
 }
