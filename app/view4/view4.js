@@ -12,6 +12,8 @@ angular.module('myApp.view4', ['ngRoute'])
     .controller('View4Ctrl', ['books', 'shoppingCart', '$scope', '$routeParams',
     function(books, shoppingCart, $scope, $routeParams) {
         var id = parseInt($routeParams.id, 10);
+        $scope.isInCart = shoppingCart.isInCart(id);
+
 
         books.load().then(function (listOfBooks) {
             var allBooks = listOfBooks.data;
@@ -22,17 +24,6 @@ angular.module('myApp.view4', ['ngRoute'])
                 }
             }
         });
-
-        $scope.isInCart = function () {
-            var cart = shoppingCart.getCart();
-            for(var i = 0; i < cart.length; i++) {
-                if (cart[i].id === id) {
-                    return true;
-                }
-            }
-
-            return false;
-        };
 
         $scope.add = function () {
             console.log("added")
