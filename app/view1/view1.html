@@ -2,12 +2,12 @@
 <div class="flex-container">
 
 
-    <div ng-repeat="book in allBooks" style="float: left">
-        <div class="b"><h3 ng-bind="book.title" ></h3></div>
+    <div class="bookInfo" ng-repeat="book in allBooks" style="float: left">
+        <h3 id="bookTitle" ng-bind="book.title" ></h3>
         <img ng-src="{{ book.image }}" />
-        <p>Description: {{book.description}}</p>
-        <p>Author: {{book.Author}}</p>
-        <p>Price: {{book.price | currency}}</p>
+        <p id="bookDes">{{ book.description }}</p>
+        <p id="bookAuthor">Author: {{ book.Author }}</p>
+        <p>Price: {{ book.price | currency }}</p>
 
 
         <button class="btn btn-info" id="myBtn" ng-click="addToCart(book)">Add to cart</button>

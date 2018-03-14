@@ -41,6 +41,10 @@ html, body {
   padding: 20px 0;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 .thumbnail {
   border: 0;
   position: relative;
@@ -245,7 +249,7 @@ md-content {
   background-color: white;
   position: fixed;
   bottom: 5px;
-  left: 5px;
+  right: 5px;
   border: 5px solid #F65A5B;
 }
 
@@ -275,11 +279,25 @@ md-content {
   text-align: center;
 }
 
-div.b {
+.bookInfo {
+  width: 200px;
+}
 
-    white-space:nowrap;
-    width: 130px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+#bookDes {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 
+#bookTitle {
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#bookAuthor {
+  font-size: 16;
+  text-
 }
