@@ -7,6 +7,10 @@ angular.module('myApp')
             controller: ['$scope', function ($scope) {
 
 
+                $scope.amount = function () {
+                    return shoppingCart.getAmount();
+                };
+
                 $scope.sum = function () {
                     return shoppingCart.getSum();
                 };

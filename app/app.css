@@ -221,6 +221,14 @@ md-content {
   align-self: center;
 }
 
+.miniCartContainer1,
+.miniCartContainer2{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .buyContainer {
   display: flex;
   justify-content: space-between;
@@ -238,8 +246,6 @@ md-content {
   position: fixed;
   bottom: 5px;
   left: 5px;
-  max-width: 300px;
-  max-height: 200px;
   border: 5px solid #F65A5B;
 }
 
