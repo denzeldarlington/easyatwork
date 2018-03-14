@@ -21,6 +21,15 @@ angular.module('myApp')
 
                 return total;
             },
+            getSum: function () {
+                var total = 0;
+
+                cart.forEach(function (item) {
+                    total += item.price * item.amount;
+                });
+
+                return total;
+            },
             isInCart: function (id) {
                 for(var i = 0; i < cart.length; i++) {
                     if (cart[i].id === id) {

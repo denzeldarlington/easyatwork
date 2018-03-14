@@ -16,13 +16,7 @@ angular.module('myApp.view2', ['ngRoute'])
     };
 
     $scope.getSum = function() {
-        var total = 0;
-
-        $scope.getCart().forEach(function (item) {
-            total += item.price * item.amount;
-        });
-
-        return total;
+        return shoppingCart.getSum();
     };
 
     $scope.getAmount = function () {

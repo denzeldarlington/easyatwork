@@ -16,7 +16,7 @@
 
 
       <tr ng-repeat="item in getCart() track by $index">
-        <td id="cartImg"><img ng-src="{{ item.image }}" id="cart"></td>
+        <td ng-click="goTo(item)" id="cartImg"><img ng-src="{{ item.image }}" id="cart"></td>
         <td id="cartTitle"> {{ item.title }} </td>
         <td> {{item.price | currency}} </td>
         <td id="amount">
