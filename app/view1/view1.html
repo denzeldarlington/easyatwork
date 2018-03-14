@@ -3,33 +3,16 @@
 
 
     <div ng-repeat="book in allBooks" style="float: left">
-        <h3 ng-bind="book.title"></h3>
+        <div class="b"><h3 ng-bind="book.title" ></h3></div>
         <img ng-src="{{ book.image }}" />
         <p>Description: {{book.description}}</p>
         <p>Author: {{book.Author}}</p>
         <p>Price: {{book.price | currency}}</p>
 
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
-            </div>
-
-        </div>
-
         <button class="btn btn-info" id="myBtn" ng-click="addToCart(book)">Add to cart</button>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Successfully added product to cart!</p>
-            </div>
-        </div>
+
+
     </div>
 </div>
 
