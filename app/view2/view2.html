@@ -32,10 +32,4 @@
   </div>
 
   <div class="emptyCart" ng-if="getCart().length < 1">The cart is empty.</div>
-
-  <div class="fixed cartTotal">
-    <p align="center">Total sum: {{getSum() | currency}}</p>
-    <md-button class="md-raised" ng-disabled="getCart().length < 1" ng-click="emptyCart()">Empty cart</md-button>
-    <md-button class="md-raised" ng-disabled="true" ng-click="emptyCart()">Buy</md-button>
-  </div>
 </div>

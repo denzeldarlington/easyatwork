@@ -12,6 +12,9 @@ angular.module('myApp')
             setCart: function(_cart) {
                 cart = _cart;
             },
+            emptyCart: function () {
+                cart = [];
+            },
             getAmount: function () {
                 var total = 0;
 
