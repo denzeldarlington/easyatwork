@@ -17,7 +17,7 @@
 
       <tr ng-repeat="item in getCart() track by $index">
         <td ng-click="goTo(item)" id="cartImg"><img ng-src="{{ item.image }}" id="cart"></td>
-        <td id="cartTitle"> {{ item.title }} </td>
+        <td ng-click="goTo(item)" id="cartTitle"> {{ item.title }} </td>
         <td> {{item.price | currency}} </td>
         <td id="amount">
           <md-button class="md-fab md-mini md-primary" ng-disabled="item.amount <= 1" ng-click="decrease(item)">-</md-button>

@@ -61,6 +61,10 @@ angular.module('myApp')
                         cart[cart.length - 1].amount = 1;
                     }
                 }
+            },
+            removeFromCart: function (item) {
+                var index = cart.indexOf(item);
+                cart.splice(index, 1);
             }
         };
     });

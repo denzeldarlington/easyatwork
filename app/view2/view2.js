@@ -9,7 +9,7 @@ angular.module('myApp.view2', ['ngRoute'])
   });
 }])
 
-.controller('View2Ctrl', ['shoppingCart', '$scope', function(shoppingCart, $scope) {
+.controller('View2Ctrl', ['shoppingCart', '$scope', '$location', function(shoppingCart, $scope, $location) {
 
     $scope.getCart = function () {
         return shoppingCart.getCart();
@@ -36,9 +36,14 @@ angular.module('myApp.view2', ['ngRoute'])
     };
 
     $scope.remove = function (item) {
-        var index = $scope.getCart().indexOf(item);
-        $scope.getCart().splice(index, 1);
+        shoppingCart.removeFromCart(item);
     };
+
+    $scope.goTo = function (item) {
+        var id = item.id;
+        var url = 'book/'+id+'/qwerty';
+        $location.url(url);
+    }
 
 }]);
 
