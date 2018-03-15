@@ -28,5 +28,3 @@ angular.module('myApp.view1', ['ngRoute'])
         $location.url(url);
     }
 }]);
-
-
