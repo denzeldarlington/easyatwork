@@ -13,6 +13,10 @@ angular.module('myApp.view4', ['ngRoute'])
     function(books, shoppingCart, $scope, $routeParams) {
         var id = parseInt($routeParams.id, 10);
 
+        $scope.shopCart = shoppingCart;
+
+
+
 
         books.load().then(function (listOfBooks) {
             var allBooks = listOfBooks.data;
@@ -23,15 +27,4 @@ angular.module('myApp.view4', ['ngRoute'])
                 }
             }
         });
-
-        $scope.isInCart = function () {
-            return shoppingCart.isInCart(id)
-        };
-
-        $scope.add = function (book) {
-            shoppingCart.addToCart(book);
-        };
-
-
-
     }]);

@@ -6,30 +6,10 @@ angular.module('myApp')
             templateUrl: 'directives/miniCart/miniCart.html',
             controller: ['$scope', function ($scope) {
 
-
-                $scope.amount = function () {
-                    return shoppingCart.getAmount();
-                };
-
-                $scope.sum = function () {
-                    return shoppingCart.getSum();
-                };
-
-                $scope.empty = function () {
-                    shoppingCart.emptyCart();
-                };
-
-                $scope.getCart = function () {
-                    return shoppingCart.getCart();
-                };
+                $scope.shopCart = shoppingCart;
 
                 $scope.getBuy = function () {
-                    var loc = $location.$$path;
-                    if(loc === '/view2') {
-                        return true;
-                    } else {
-                        return false;
-                    }
+                    return ($location.$$path === '/view2');
                 };
 
                 $scope.checkout = function () {

@@ -1,11 +1,30 @@
 <h1> Your Cart  </h1>
 
-<div class="cartContainer">
+<md-content class="cartContainer">
+  <div class="cart" layout="row" ng-repeat="item in shopCart.getCart() track by $index">
+    <div class="cartImg"><img id="bookImg" ng-src="{{ item.image }}"></div>
+    <div class="cartInfo" layout="column">
+      <div class="cartTitle">{{ item.title }}</div>
+      <div class="cartAuthor">Written by <b>{{ item.author }}</b></div>
+      <div class="cartDescription">{{ item.description }}</div>
+    </div>
+    <div class="cartAmount" layout="column">
+      <div>
+        <md-button class="md-fab md-mini md-primary" ng-disabled="item.amount <= 1" ng-click="shopCart.decrease(item)">-</md-button>
+        {{item.amount}}
+        <md-button class="md-fab md-mini md-primary" ng-click="shopCart.addToCart(item)">+</md-button>
+      </div>
+      <div class="cartTotal">{{ item.price * item.amount | currency }}</div>
+    </div>
+  </div>
+</md-content>
 
-  <h3>Number of items in cart: {{ getAmount() }}</h3>
+<!--<div class="cartContainer">
+
+  <h3>Number of items in cart: {{ shopCart.getAmount() }}</h3>
 
   <div class="cart">
-    <table style="overflow-x:auto;">
+    <table>
       <tr id="cartTable">
         <th>Item</th>
         <th></th>
@@ -15,21 +34,21 @@
       </tr>
 
 
-      <tr ng-repeat="item in getCart() track by $index">
-        <td ng-click="goTo(item)" id="cartImg"><img ng-src="{{ item.image }}" id="cart"></td>
+      <tr ng-repeat="item in shopCart.getCart() track by $index">
+        <td ng-click="goTo(item)" id="cartImg"><img ng-src="{{ item.image }}" id="bookImg"></td>
         <td ng-click="goTo(item)" id="cartTitle"> {{ item.title }} </td>
         <td> {{item.price | currency}} </td>
         <td id="amount">
-          <md-button class="md-fab md-mini md-primary" ng-disabled="item.amount <= 1" ng-click="decrease(item)">-</md-button>
+          <md-button class="md-fab md-mini md-primary" ng-disabled="item.amount <= 1" ng-click="shopCart.decrease(item)">-</md-button>
           {{item.amount}}
-          <md-button class="md-fab md-mini md-primary" ng-click="increase(item)">+</md-button>
+          <md-button class="md-fab md-mini md-primary" ng-click="shopCart.addToCart(item)">+</md-button>
         </td>
         <td>{{item.price * item.amount | currency}}</td>
-        <td><md-button class="md-raised" ng-click="remove(item)">Remove</md-button></td>
+        <td><md-button class="md-raised" ng-click="shopCart.removeFromCart(item)">Remove</md-button></td>
       </tr>
 
     </table>
   </div>
 
-  <div class="emptyCart" ng-if="getCart().length < 1">The cart is empty.</div>
-</div>
+  <div class="emptyCart" ng-if="shopCart.getCart().length < 1">The cart is empty.</div>
+</div>!-->

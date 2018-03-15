@@ -156,54 +156,67 @@ h3 {
   z-index: auto;
 }
 
-.cartContainer {
-  background-color: lightgray;
-  margin: 10px;
-  padding: 10px;
-}
-
 .cart {
-  background-color: white;
+  margin: auto;
+  min-width: 150px;
+  margin-bottom: 5px;
+  padding: 10px 10px 10px 1%;
+  border: 1px solid #F65A5B;
 }
 
-th, td {
-  padding: 5px;
-  max-width: 400px;
-  min-width: 80px;
-  text-align: left;
+.cartContainer {
+  margin: auto;
+  min-width: 400px;
+  max-width: 1200px;
 }
 
-td#amount {
+.cartImg {
+  width: 100px;
+  height: 150px;
+  flex: none;
+}
+
+.cartInfo {
+  padding: 0 12px 12px 12px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cartTitle {
+  font-size: 18px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+}
+
+.cartAuthor {
+  font-size: 12px;
+}
+
+.cartAmount {
   min-width: 100px;
-}
-
-td#cartImg {
-  max-width: 50px;
-}
-
-td#cartTitle {
-  min-width: 300px;
-  max-width: 400px;
-}
-
-.emptyCart {
-  padding: 1%;
+  flex: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .cartTotal {
-  padding: 1px;
-  background-color: white;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  max-width: 300px;
-  max-height: 200px;
-  border: 5px solid #F65A5B;
+  font-size: 16px;
+  padding-top: 20px;
 }
 
-img#cart {
-  max-width: 50px;
-  max-height: 110px;
+.cartDescription {
+  margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+img#bookImg {
+  max-height: 100%;
+}
+
+.imgContainer {
+  width: 200px;
 }
 
 md-content {
@@ -231,6 +244,7 @@ md-content {
   justify-content: space-around;
   padding-top: 5px;
   padding-bottom: 5px;
+  font-size: 20px;
 }
 
 .buyContainer {
@@ -281,7 +295,8 @@ md-content {
 
 .bookInfo {
   width: 200px;
-  float: left
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #bookDes {

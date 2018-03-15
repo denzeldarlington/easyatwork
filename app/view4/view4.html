@@ -6,9 +6,9 @@
             <div class="buyContainer">
                 <div class="singlePrice">{{ book.price | currency }}</div>
                 <div class="singleBuy">
-                    <md-button class="md-raised" ng-disabled="isInCart()" ng-click="add(book)">
-                        <span ng-show="!isInCart()">Add to Cart</span>
-                        <span ng-show="isInCart()">Added to Cart</span>
+                    <md-button class="md-raised" ng-disabled="shopCart.isInCart(book.id)" ng-click="shopCart.addToCart(book)">
+                        <span ng-show="!shopCart.isInCart(book.id)">Add to Cart</span>
+                        <span ng-show="shopCart.isInCart(book.id)">Added to Cart</span>
                     </md-button>
                 </div>
             </div>

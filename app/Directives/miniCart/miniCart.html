@@ -1,11 +1,11 @@
 <div class="miniCart">
     <div class="miniCartContainer1">
-        <div>Items: {{ amount() }}</div>
-        <div>Sum: {{ sum() | currency }}</div>
+        <div ng-show="!getBuy()">Items in Cart: {{ shopCart.getAmount() }}</div>
+        <div ng-show="getBuy()">Subtotal ({{ shopCart.getAmount() }}): {{ shopCart.getSum() | currency }}</div>
     </div>
     <div class="miniCartContainer2">
-        <md-button class="md-raised" ng-disabled="getCart().length < 1" ng-click="empty()">Empty cart</md-button>
-        <md-button class="md-raised" ng-disabled="getBuy() || getCart().length < 1" ng-click="checkout()">
+        <md-button class="md-raised" ng-disabled="shopCart.getCart().length < 1" ng-click="shopCart.emptyCart()">Empty cart</md-button>
+        <md-button class="md-raised" ng-disabled="getBuy() || shopCart.getCart().length < 1" ng-click="checkout()">
             <span ng-show="getBuy()">Buy</span>
             <span ng-show="!getBuy()">Checkout</span>
         </md-button>

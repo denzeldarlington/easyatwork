@@ -65,6 +65,9 @@ angular.module('myApp')
                     }
                 }
             },
+            decrease: function (item) {
+                item.amount -= 1;
+            },
             removeFromCart: function (item) {
                 var index = cart.indexOf(item);
                 cart.splice(index, 1);

@@ -11,33 +11,7 @@ angular.module('myApp.view2', ['ngRoute'])
 
 .controller('View2Ctrl', ['shoppingCart', '$scope', '$location', function(shoppingCart, $scope, $location) {
 
-    $scope.getCart = function () {
-        return shoppingCart.getCart();
-    };
-
-    $scope.getSum = function() {
-        return shoppingCart.getSum();
-    };
-
-    $scope.getAmount = function () {
-        return shoppingCart.getAmount();
-    };
-
-    $scope.emptyCart = function () {
-        shoppingCart.setCart([]);
-    };
-    
-    $scope.decrease = function (item) {
-        item.amount -= 1;
-    };
-
-    $scope.increase = function (item) {
-        item.amount += 1;
-    };
-
-    $scope.remove = function (item) {
-        shoppingCart.removeFromCart(item);
-    };
+    $scope.shopCart = shoppingCart;
 
     $scope.goTo = function (item) {
         var id = item.id;
