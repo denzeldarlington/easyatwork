@@ -32,6 +32,12 @@ angular.module('myApp.view1', ['ngRoute'])
 
     $scope.cartAmount = function () {
         return shoppingCart.getAmount();
+    };
+
+    $scope.goTo = function (book) {
+        var id = book.id;
+        var url = 'book/'+id+'/qwerty';
+        $location.url(url);
     }
 }]);
 

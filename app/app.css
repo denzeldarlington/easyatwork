@@ -281,6 +281,7 @@ md-content {
 
 .bookInfo {
   width: 200px;
+  float: left
 }
 
 #bookDes {
@@ -298,6 +299,17 @@ md-content {
 }
 
 #bookAuthor {
-  font-size: 16;
-  text-
+  font-size: 12px;
+  padding-top: 5px;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#bookPrice {
+  font-size: 18px;
+}
+
+.centerAlign {
+  align-self: center;
 }
