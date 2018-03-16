@@ -101,27 +101,24 @@
   "id": 13,
   "title": "The Fallen",
   "image": "https://prodimage.images-bn.com/pimages/9781538761397_p0_v3_s192x300.jpg",
-  "Author": "David Baldacci",
+  "author": "David Baldacci",
   "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
-  "author": "George Washington",
   "price": 19.99
 },
 {
   "id": 14,
   "title": "Shoot First",
   "image": "https://prodimage.images-bn.com/pimages/9780735217201_p0_v3_s192x300.jpg",
-  "Author": "Stuart Woods",
+  "author": "Stuart Woods",
   "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
-  "author": "George Washington",
   "price": 14.99
 },
 {
   "id": 15,
   "title": "Dark Sacred Night",
   "image": "https://prodimage.images-bn.com/pimages/9780316484800_p0_v2_s192x300.jpg",
-  "Author": "Michael Connelly",
+  "author": "Michael Connelly",
   "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
-  "author": "George Washington",
   "price": 9.99
 
 }]
