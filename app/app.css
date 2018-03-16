@@ -7,17 +7,6 @@ html, body {
   max-width: 100%;
   height: auto;
 }
-.header {
-  padding: 15px;
-}
-
-.header img {
-  display: inline-block;
-}
-
-.header h1 {
-  display: inline-block;|
-}
 
 .main {
   background-color: #f2f2f2 ;
@@ -45,83 +34,6 @@ h3 {
   font-size: 18px;
 }
 
-.thumbnail {
-  border: 0;
-  position: relative;
-  padding: 50px;
-  border-radius: 0;
-  margin-bottom:50px;
-}
-
-.thumbnail img {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  max-width: 100%;
-}
-
-.title,
-.date {
-  color: #444;
-  margin: 0;
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.date {
-  color: #a3a3a3 ;
-  font-size: 14px;
-  font-weight: 200;
-}
-
-.price {
-  background-color: #39D1B4 ;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  font-weight: 200;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
-  width: 80px;
-  position: absolute;
-  top: -40px;
-  right: 20px;
-}
-
-.rating {
-  text-align: right;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  margin: 30px 0 -30px 20px;
-}
-
-.likes,
-.dislikes {
-  background: #F65A5B ;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 15px;
-  line-height: 40px;
-  min-width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0 -30px 0 40px;
-  text-align: center;
-  font-weight: 200;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: background 500ms;
-}
-
-.likes:hover,
-.dislikes:hover {
-  color: #F65A5B ;
-  background: rgba(246, 90, 91, 0.25);
-  transition: background 500ms;
-}
-
 .footer {
   text-align: center;
   margin: 80px 0 110px;
@@ -139,12 +51,6 @@ h3 {
 .container-fluid {
   alignment: center;
   width: auto;
-}
-
-.book {
-  padding: 2px;
-  float: left;
-  width: 250px;
 }
 
 .md-button.md-fab.md-mini {
@@ -233,11 +139,6 @@ md-content {
   align-self: center;
 }
 
-.singleBuy {
-  padding-right: 5px;
-  align-self: center;
-}
-
 .miniCartContainer1,
 .miniCartContainer2{
   display: flex;
@@ -250,8 +151,7 @@ md-content {
 .buyContainer {
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 5px 5px 0;
 }
 
 #btm {
@@ -278,19 +178,6 @@ md-content {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-}
-
-.flex-item {
-  background: #FFFFFF;
-  padding: 5px;
-  width: 150px;
-  height: 300px;
-  margin-top: 10px;
-  line-height: 150px;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
 }
 
 .bookInfo {
@@ -321,10 +208,29 @@ md-content {
   text-overflow: ellipsis;
 }
 
-#bookPrice {
-  font-size: 18px;
+#bookImage {
+  margin-top: unset;
+  margin-left: 5px;
 }
 
-.centerAlign {
+.bookPrice {
+  font-size: 18px;
   align-self: center;
+}
+
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
 }
