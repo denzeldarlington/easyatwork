@@ -18,47 +18,20 @@
     <link rel="stylesheet" href="app.css">
     <link rel='icon' href='images/ezy_exe.png' type='image/x-icon'>
 <body ng-app="myApp">
-
-
-<div class="jumbotron">
-    <div class="container text-center">
-        <h1>E A S Y B O O K S™</h1>
-        <p><code><small>by Aleks & Darlington</small></code></p>
-    </div>
-</div>
-
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#!view1"><i class="glyphicon glyphicon-home"></i></a></li>
-                <li><a href="#!view1">Books</a></li>
-
-                <li><a href="#!view3">About</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-
-
-                <li><a href="#!/view2"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
-            </ul>
-
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>E A S Y B O O K S™</h1>
+            <p><code><small>by Aleks & Darlington</small></code></p>
         </div>
     </div>
-</nav>
 
-<div id="wrapperHeader">
-    <div id="header">
-        <div align="center"> <img src="images/Textbooks_Hero_01-01.jpg" class="img-fluid"/></div>
+    <nav-bar></nav-bar>
+
+    <div id="wrapperHeader">
+        <div id="header">
+            <div align="center"> <img src="images/Textbooks_Hero_01-01.jpg" class="img-fluid"/></div>
+        </div>
     </div>
-</div>
 
 <div class="main" >
 
@@ -99,6 +72,7 @@
     <script src="services/books.js"></script>
     <script src="services/shoppingCart.js"></script>
     <script src="Directives/miniCart/miniCart.js"></script>
+    <script src="Directives/navBar/navBar.js"></script>
     <script src="components/version/version.js"></script>
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>

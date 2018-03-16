@@ -15,9 +15,6 @@ angular.module('myApp.view4', ['ngRoute'])
 
         $scope.shopCart = shoppingCart;
 
-
-
-
         books.load().then(function (listOfBooks) {
             var allBooks = listOfBooks.data;
             for(var i = 0; i < allBooks.length; i++) {
