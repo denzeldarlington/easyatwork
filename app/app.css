@@ -46,6 +46,83 @@ h3 {
   text-align: center;
 }
 
+.thumbnail {
+  border: 0;
+  position: relative;
+  padding: 50px;
+  border-radius: 0;
+  margin-bottom:50px;
+}
+
+.thumbnail img {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.title,
+.date {
+  color: #444;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.date {
+  color: #a3a3a3 ;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.price {
+  background-color: #39D1B4 ;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-weight: 200;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+}
+
+.rating {
+  text-align: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin: 30px 0 -30px 20px;
+}
+
+.likes,
+.dislikes {
+  background: #F65A5B ;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 -30px 0 40px;
+  text-align: center;
+  font-weight: 200;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background 500ms;
+}
+
+.likes:hover,
+.dislikes:hover {
+  color: #F65A5B ;
+  background: rgba(246, 90, 91, 0.25);
+  transition: background 500ms;
+}
+
 .footer {
   text-align: center;
   margin: 80px 0 110px;
@@ -81,63 +158,33 @@ h3 {
 }
 
 .cartContainer {
-  margin: auto;
-  min-width: 350px;
-  max-width: 1200px;
+  background-color: lightgray;
+  margin: 10px;
+  padding: 10px;
 }
 
 .cart {
-  margin: auto;
-  min-width: 150px;
-  margin-bottom: 5px;
-  padding: 10px 10px 10px 1%;
-  border: 1px solid #F65A5B;
+  background-color: white;
 }
 
-.cartTitle {
-  font-size: 18px;
-  font-weight: 500;
-  overflow: hidden;
-  text-overflow: ellipsis;
+th, td {
+  padding: 5px;
+  max-width: 400px;
+  min-width: 80px;
+  text-align: left;
 }
 
-.cartImg {
-  width: 100px;
-  height: 150px;
-  flex: none;
+td#amount {
+  min-width: 100px;
 }
 
-.cartInfo {
-  padding: 0 12px 12px 12px;
-  white-space: nowrap;
-  overflow: hidden;
+td#cartImg {
+  max-width: 50px;
 }
 
-.cartAuthor {
-  font-size: 12px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.cartDescription {
-  margin-top: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-img#bookImg {
-  height: 100%;
-  width: 100%;
-}
-
-.imgContainer {
-  width: 200px;
-  height: 300px;
-}
-
-.cartAmount {
-  text-align: center;
-  justify-content: space-around;
+td#cartTitle {
+  min-width: 300px;
+  max-width: 400px;
 }
 
 .emptyCart {
@@ -145,17 +192,23 @@ img#bookImg {
 }
 
 .cartTotal {
-  font-size: 16px;
-  padding-top: 20px;
+  padding: 1px;
+  background-color: white;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  max-width: 300px;
+  max-height: 200px;
+  border: 5px solid #F65A5B;
+}
+
+img#cart {
+  max-width: 50px;
+  max-height: 110px;
 }
 
 md-content {
   padding: 10px;
-}
-.aboutContainer {
-  margin: auto;
-  min-width: 350px;
-  max-width: 1100px;
 }
 
 .btnHolder {
@@ -202,8 +255,8 @@ md-content {
 }
 
 .flex-container {
-  padding: 10px;
-  margin: auto;
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: -webkit-box;
   display: -moz-box;
@@ -212,7 +265,6 @@ md-content {
   display: flex;
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
-  max-width: 1800px;
 }
 
 .flex-item {
@@ -233,22 +285,8 @@ md-content {
   float: left
 }
 
-.singleBookContainer {
-  padding: 10px;
-}
-
-.singleBook {
-  margin: auto;
-  max-width: 1200px;
-  min-width: 220px;
-}
-
-#bookImage {
-  margin-top: unset;
-  margin-left: 5px;
-}
-
 #bookDes {
+
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -275,20 +313,6 @@ md-content {
   font-size: 18px;
 }
 
-/* Remove the navbar's default rounded borders and increase the bottom margin */
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-}
-
-/* Remove the jumbotron's default bottom margin */
-.jumbotron {
-  margin-bottom: 0;
-  min-width: 350px;
-}
-
-/* Add a gray background color and some padding to the footer */
-footer {
-  background-color: #f2f2f2;
-  padding: 25px;
+.centerAlign {
+  align-self: center;
 }

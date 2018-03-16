@@ -9,12 +9,13 @@
         <p id="bookDes">{{ book.description }}</p>
         <div class="buyContainer">
             <div class="bookPrice">{{ book.price | currency }}</div>
-            <md-button class="md-raised" ng-disabled="shopCart.isInCart(book.id)" ng-click="shopCart.addToCart(book)">
-                <span ng-show="!shopCart.isInCart(book.id)">Add to cart</span>
-                <span ng-show="shopCart.isInCart(book.id)">Added to cart</span>
-            </md-button>
+            <button class="btn btn-info" ng-click="shopCart.addToCart(book)">Add to cart</button>
         </div>
     </div>
+</div>
+
+<div class="btnHolder">
+    <button class="btn btn-danger" ng-click="checkOut()">Checkout <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> </button>
 </div>
 
 

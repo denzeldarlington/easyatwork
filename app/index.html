@@ -16,27 +16,72 @@
     <!-- Angular Material style sheet -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.7/angular-material.min.css">
     <link rel="stylesheet" href="app.css">
-    <link rel='icon' href='images/ezy_exe.png' type='image/x-icon'>
-</head>
+    <link rel='icon' href='images/ezy_exe.png' type='image/x-icon'/ >
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 0px;
+            border-radius: 0;
+        }
 
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
 <body ng-app="myApp">
-    <div class="jumbotron">
-        <div class="container text-center">
-            <h1>E A S Y B O O K S™</h1>
-            <p><code><small>by Aleks & Darlington</small></code></p>
+
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>E A S Y B O O K S™</h1>
+        <p><code><small>by Aleks & Darlington</small></code></p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a data-toggle="collapse" data-target=".navbar-collapse" href="#!view1"><i class="glyphicon glyphicon-home"></i></a></li>
+                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#!view1">Books</a></li>
+
+                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#!view3">About</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#!/view2"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+
         </div>
     </div>
+</nav>
 
-    <nav-bar></nav-bar>
-
-    <div id="wrapperHeader">
-        <div id="header">
-            <div align="center"> <img src="images/Textbooks_Hero_01-01.jpg" class="img-fluid"/></div>
-        </div>
+<div id="wrapperHeader">
+    <div id="header">
+        <div align="center"> <img src="images/Textbooks_Hero_01-01.jpg" class="img-fluid"/></div>
     </div>
+</div>
 
 <div class="main" >
     <div class="container">
+
+        <ul class="flex-container">
 
             <div ng-view></div>
 
@@ -74,7 +119,6 @@
     <script src="services/books.js"></script>
     <script src="services/shoppingCart.js"></script>
     <script src="Directives/miniCart/miniCart.js"></script>
-    <script src="Directives/navBar/navBar.js"></script>
     <script src="components/version/version.js"></script>
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
