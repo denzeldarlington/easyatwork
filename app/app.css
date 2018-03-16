@@ -7,6 +7,17 @@ html, body {
   max-width: 100%;
   height: auto;
 }
+.header {
+  padding: 15px;
+}
+
+.header img {
+  display: inline-block;
+}
+
+.header h1 {
+  display: inline-block;|
+}
 
 .main {
   background-color: #f2f2f2 ;
@@ -15,7 +26,7 @@ html, body {
 
 .main h1 {
   color: #F65A5B ;
-  font-size: 64px;
+  font-size: 42px;
   margin: 0 0 80px 0;
   padding: 20px 0;
   line-height: 60px;
@@ -32,6 +43,7 @@ html, body {
 
 h3 {
   font-size: 18px;
+  text-align: center;
 }
 
 .footer {
@@ -53,6 +65,12 @@ h3 {
   width: auto;
 }
 
+.book {
+  padding: 2px;
+  float: left;
+  width: 250px;
+}
+
 .md-button.md-fab.md-mini {
   min-height: 10px;
   min-width: 10px;
@@ -60,6 +78,12 @@ h3 {
   width: 2rem;
   height: 2rem;
   z-index: auto;
+}
+
+.cartContainer {
+  margin: auto;
+  min-width: 350px;
+  max-width: 1200px;
 }
 
 .cart {
@@ -70,10 +94,11 @@ h3 {
   border: 1px solid #F65A5B;
 }
 
-.cartContainer {
-  margin: auto;
-  min-width: 350px;
-  max-width: 1200px;
+.cartTitle {
+  font-size: 18px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .cartImg {
@@ -88,30 +113,10 @@ h3 {
   overflow: hidden;
 }
 
-.cartTitle {
-  font-size: 18px;
-  font-weight: 500;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .cartAuthor {
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.cartAmount {
-  min-width: 100px;
-  flex: none;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.cartTotal {
-  font-size: 16px;
-  padding-top: 20px;
 }
 
 .cartDescription {
@@ -121,11 +126,27 @@ h3 {
 }
 
 img#bookImg {
-  max-height: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .imgContainer {
   width: 200px;
+  height: 300px;
+}
+
+.cartAmount {
+  text-align: center;
+  justify-content: space-around;
+}
+
+.emptyCart {
+  padding: 1%;
+}
+
+.cartTotal {
+  font-size: 16px;
+  padding-top: 20px;
 }
 
 md-content {
@@ -135,10 +156,6 @@ md-content {
   margin: auto;
   min-width: 350px;
   max-width: 1100px;
-}
-
-#about{
-
 }
 
 .btnHolder {
@@ -151,19 +168,24 @@ md-content {
   align-self: center;
 }
 
+.singleBuy {
+  padding-right: 5px;
+  align-self: center;
+}
+
 .miniCartContainer1,
 .miniCartContainer2{
   display: flex;
   justify-content: space-around;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-size: 20px;
 }
 
 .buyContainer {
   display: flex;
   justify-content: space-between;
-  padding: 5px 5px 5px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #btm {
@@ -193,10 +215,22 @@ md-content {
   max-width: 1800px;
 }
 
+.flex-item {
+  background: #FFFFFF;
+  padding: 5px;
+  width: 150px;
+  height: 300px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
 .bookInfo {
   width: 200px;
-  margin-left: 5px;
-  margin-right: 5px;
+  float: left
 }
 
 .singleBookContainer {
@@ -209,12 +243,18 @@ md-content {
   min-width: 220px;
 }
 
+#bookImage {
+  margin-top: unset;
+  margin-left: 5px;
+}
+
 #bookDes {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+
 }
 
 #bookTitle {
@@ -231,14 +271,8 @@ md-content {
   text-overflow: ellipsis;
 }
 
-#bookImage {
-  margin-top: unset;
-  margin-left: 5px;
-}
-
-.bookPrice {
+#bookPrice {
   font-size: 18px;
-  align-self: center;
 }
 
 /* Remove the navbar's default rounded borders and increase the bottom margin */
