@@ -3,6 +3,7 @@
 
 <html>
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
@@ -16,7 +17,8 @@
     <!-- Angular Material style sheet -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.7/angular-material.min.css">
     <link rel="stylesheet" href="app.css">
-    <link rel='icon' href='images/ezy_exe.png' type='image/x-icon'/ >
+    <link rel='icon' href='images/ezy_exe.png' type='image/x-icon'/>
+    <link rel="stylesheet" href="coverflow/css/style.css">
     <style>
 
 
@@ -57,12 +59,167 @@
         </div>
     </div>
 </nav>
+<body>
 
-<div id="wrapperHeader">
-    <div id="header">
-        <div align="center"> <img src="images/Textbooks_Hero_01-01.jpg" class="img-fluid"/></div>
+
+
+
+<div id="coverflow">
+    <div class="covers">
+        <ul>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9780345806789_p0_v1_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9780385333481_p0_v1_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9781501142543_p0_v2_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9781501188299_p0_v2_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9781594631931_p0_v3_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/2940000281048_p0_v255_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/2940000983102_p0_v261_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9780143127550_p0_v4_s550x406.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9780316769174_p0_v1_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/2940000983102_p0_v261_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9780062564474_p0_v3_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9780425281314_p0_v2_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9780679763888_p0_v1_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9781250144843_p0_v2_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9781506703862_p0_v2_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+            <li><div class="imgdiv">
+                <a>
+                    <img src="coverflow/img/9781595586438_p0_v3_s192x300.jpg" alt="">
+                </a>
+            </div>
+                <div class="text">
+
+                </div>
+            </li>
+        </ul>
     </div>
+    <div class="Controller"></div>
 </div>
+
+
+
+
+
 
 <div class="main" >
     <div class="container">
@@ -84,6 +241,10 @@
     <mini-cart></mini-cart>
 
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
     <!-- Angular Material requires Angular.js Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
@@ -108,6 +269,10 @@
     <script src="components/version/version.js"></script>
     <script src="components/version/version-directive.js"></script>
     <script src="components/version/interpolate-filter.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="coverflow/js/coverflow.min.js"></script>
+    <script> $coverflow = $("#coverflow").coverflow({"path":"coverflow/"}); </script>
 
 
 </body>
