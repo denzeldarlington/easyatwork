@@ -8,7 +8,7 @@
         <p id="bookAuthor">By {{ book.author }}</p>
         <p id="bookDes">{{ book.description }}</p>
         <div class="buyContainer">
-            <div class="bookPrice">{{ book.price | currency }}</div>
+            <div>{{ book.price | currency }}</div>
             <button class="btn btn-info" ng-click="shopCart.addToCart(book)">Add to cart</button>
         </div>
     </div>

@@ -7,7 +7,7 @@
         <md-button class="md-raised" ng-disabled="shopCart.getCart().length < 1" ng-click="shopCart.emptyCart()">Empty cart</md-button>
         <md-button class="md-raised" ng-disabled="getBuy() || shopCart.getCart().length < 1" ng-click="checkout()">
             <span ng-show="getBuy()">Buy</span>
-            <span ng-show="!getBuy()">Checkout</span>
+            <span ng-show="!getBuy()">Go To Cart</span>
         </md-button>
     </div>
 </div>

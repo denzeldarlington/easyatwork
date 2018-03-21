@@ -6,7 +6,7 @@
     <div class="cartImg" ng-click="goTo(item)"><img id="bookImg" ng-src="{{ item.image }}"></div>
     <div class="cartInfo" layout="column">
       <div class="cartTitle" ng-click="goTo(item)">{{ item.title }}</div>
-      <div class="cartAuthor">Written by <b>{{ item.author }}</b></div>
+      <div class="cartAuthor">{{ item.author }}</div>
       <div class="cartDescription">{{ item.description }}</div>
     </div>
     <div class="cartAmount" layout="column">
@@ -15,7 +15,7 @@
         {{item.amount}}
         <md-button class="md-fab md-mini md-primary" ng-click="shopCart.addToCart(item)">+</md-button>
       </div>
-      <div class="cartTotal">{{ item.price * item.amount | currency }}</div>
+      <div class="cartItemTotal">{{ item.price * item.amount | currency }}</div>
       <md-button class="md-raised" ng-click="shopCart.removeFromCart(item)">Remove</md-button>
     </div>
   </div>
