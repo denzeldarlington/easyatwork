@@ -5,7 +5,7 @@
     </div>
     <div class="miniCartContainer2">
         <md-button class="md-raised" ng-disabled="shopCart.getCart().length < 1" ng-click="shopCart.emptyCart()">Empty cart</md-button>
-        <md-button class="md-raised" ng-disabled="getBuy() || getCart().length < 1" ng-click="checkout()">
+        <md-button class="md-raised" ng-disabled="getBuy() || shopCart.getCart().length < 1" ng-click="checkout()">
             <span ng-show="getBuy()">Buy</span>
             <span ng-show="!getBuy()">Checkout</span>
         </md-button>
