@@ -51,40 +51,41 @@
   "id": 7,
   "title": "Accidental Heroes",
   "image": "https://prodimage.images-bn.com/pimages/9781101884096_p0_v1_s192x300.jpg",
-  "description": "Est in vivendum comprehensam conclusionemque, alia cetero iriure no usu, te cibo deterruisset pro. Ludus epicurei quo id, ex cum iudicabit intellegebat. Ex modo deseruisse quo, mel noster menandri sententiae ea, duo et tritani malorum recteque. Nullam suscipit partiendo nec id, indoctum vulputate per ex. Et has enim habemus tibique. Cu latine electram cum, ridens propriae intellegat eu mea.",
   "author": "Daniel Steel",
+  "description": "Est in vivendum comprehensam conclusionemque, alia cetero iriure no usu, te cibo deterruisset pro. Ludus epicurei quo id, ex cum iudicabit intellegebat. Ex modo deseruisse quo, mel noster menandri sententiae ea, duo et tritani malorum recteque. Nullam suscipit partiendo nec id, indoctum vulputate per ex. Et has enim habemus tibique. Cu latine electram cum, ridens propriae intellegat eu mea.",
   "price": 14.99
 },
 {
   "id": 8,
   "title": "The Rock, The Road, and the Rabbi",
   "image": "https://prodimage.images-bn.com/pimages/9780785222682_p0_v1_s192x300.jpg",
+  "Author": "Kathie Lee Gifford",
   "description": "Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.",
-  "author": "Kathie Lee Gifford",
+  "author": "Aleksander Olsen",
   "price": 9.99
 },
 {
   "id": 9,
   "title": "Children of blood and bone",
   "image": "https://prodimage.images-bn.com/pimages/9781250295446_p0_v5_s192x300.jpg",
-  "description": "Qui utamur tacimates quaestio ad, quod graece omnium ius ut. Pri ut vero debitis interpretaris, qui cu mentitum adipiscing disputationi. Voluptatum mediocritatem quo ut. Fabulas dolorem ei has, quem molestie persequeris et sit.",
   "author": "Tom Adeyemi",
+  "description": "Qui utamur tacimates quaestio ad, quod graece omnium ius ut. Pri ut vero debitis interpretaris, qui cu mentitum adipiscing disputationi. Voluptatum mediocritatem quo ut. Fabulas dolorem ei has, quem molestie persequeris et sit.",
   "price": 19.99
 },
 {
   "id": 10,
   "title": "Red Alert",
   "image": "https://prodimage.images-bn.com/pimages/9780316395441_p0_v2_s192x300.jpg",
-  "description": "Est in vivendum comprehensam conclusionemque, alia cetero iriure no usu, te cibo deterruisset pro. Ludus epicurei quo id, ex cum iudicabit intellegebat. Ex modo deseruisse quo, mel noster menandri sententiae ea, duo et tritani malorum recteque. Nullam suscipit partiendo nec id, indoctum vulputate per ex. Et has enim habemus tibique. Cu latine electram cum, ridens propriae intellegat eu mea.",
   "author": "James Patterson",
+  "description": "Est in vivendum comprehensam conclusionemque, alia cetero iriure no usu, te cibo deterruisset pro. Ludus epicurei quo id, ex cum iudicabit intellegebat. Ex modo deseruisse quo, mel noster menandri sententiae ea, duo et tritani malorum recteque. Nullam suscipit partiendo nec id, indoctum vulputate per ex. Et has enim habemus tibique. Cu latine electram cum, ridens propriae intellegat eu mea.",
   "price": 14.99
 },
 {
   "id": 11,
   "title": "Secret Empires",
   "image": "https://prodimage.images-bn.com/pimages/9780062569363_p0_v5_s192x300.jpg",
-  "description": "Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.",
   "author": "Clinton Cash",
+  "description": "Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.",
   "price": 9.99
 
 },
@@ -92,32 +93,115 @@
   "id": 12,
   "title": "Darkest Journey",
   "image": "https://prodimage.images-bn.com/pimages/9780778330134_p0_v4_s192x300.jpg",
-  "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
   "author": "Kathie Lee Gifford",
+  "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
   "price": 9.99
 },
 {
   "id": 13,
   "title": "The Fallen",
   "image": "https://prodimage.images-bn.com/pimages/9781538761397_p0_v3_s192x300.jpg",
-  "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
   "author": "David Baldacci",
+  "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
   "price": 19.99
 },
 {
   "id": 14,
   "title": "Shoot First",
   "image": "https://prodimage.images-bn.com/pimages/9780735217201_p0_v3_s192x300.jpg",
-  "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
   "author": "Stuart Woods",
+  "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
   "price": 14.99
 },
 {
   "id": 15,
   "title": "Dark Sacred Night",
   "image": "https://prodimage.images-bn.com/pimages/9780316484800_p0_v2_s192x300.jpg",
-  "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
   "author": "Michael Connelly",
+  "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
   "price": 9.99
 
-}]
+},
+  {
+    "id": 16,
+    "title": "Genius Foods: Become Smarter, Happier, and More Productive While Protecting Your Brain for Life",
+    "image": "https://prodimage.images-bn.com/pimages/9780062562852_p0_v3_s550x406.jpg",
+    "author": "Max Lugavere, Paul Grewal",
+    "description": "Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.",
+    "price": 9.99
+
+  },
+  {
+    "id": 17,
+    "title": "The Grain Brain Whole Life Plan: Boost Brain Performance, Lose Weight, and Achieve Optimal Health",
+    "image": "https://prodimage.images-bn.com/pimages/9780316319195_p0_v3_s550x406.jpg",
+    "author": "David Perlmutter, MD, Kristin Loberg",
+    "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+    "price": 29.99
+  },
+  {
+    "id": 18,
+    "title": "Memory Rescue: Supercharge Your Brain, Reverse Memory Loss, and Remember What Matters Most",
+    "image": "https://prodimage.images-bn.com/pimages/9781496425607_p0_v2_s550x406.jpg",
+    "author": "Dr. Daniel G. Amen",
+    "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+    "price": 19.99
+  },
+  {
+    "id": 19,
+    "title": "Fast Food Genocide: How Processed Food is Killing Us and What We Can Do About It",
+    "image": "https://prodimage.images-bn.com/pimages/9780062571212_p0_v4_s550x406.jpg",
+    "author": "Joel Fuhrman, Robert Phillips",
+    "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+    "price": 14.99
+  },
+  {
+    "id": 20,
+    "title": "The Longevity Diet: Discover the New Science Behind Stem Cell Activation and Regeneration to Slow Aging, Fight Disease, and Optimize Weight",
+    "image": "https://prodimage.images-bn.com/pimages/9780525534075_p0_v1_s550x406.jpg",
+    "author": " Valter Longo",
+    "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+    "price": 19.99
+  },
+  {
+    "id": 21,
+    "title": "Fierce Marriage: Radically Pursuing Each Other in Light of Christ's Relentless Love",
+    "image": "https://prodimage.images-bn.com/pimages/9780801075308_p0_v3_s550x406.jpg",
+    "author": "Ryan Frederick, Selena Frederick, Gary Thomas (Foreword by)",
+    "description": "Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.",
+    "price": 9.99
+
+  },
+  {
+    "id": 22,
+    "title": "Elastic: Flexible Thinking in a Time of Change",
+    "image": "https://prodimage.images-bn.com/pimages/9781101870921_p0_v4_s550x406.jpg",
+    "author": "Steven Sloman, Philip Fernbach",
+    "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+    "price": 9.99
+  },
+  {
+    "id": 23,
+    "title": "The Knowledge Illusion: Why We Never Think Alone",
+    "image": "https://prodimage.images-bn.com/pimages/9780399184352_p0_v2_s550x406.jpg",
+    "author": "David Baldacci",
+    "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+    "price": 19.99
+  },
+  {
+    "id": 24,
+    "title": "The Great Unknown: Seven Journeys to the Frontiers of Science",
+    "image": "https://prodimage.images-bn.com/pimages/9780735221802_p0_v3_s550x406.jpg",
+    "author": " Marcus du Sautoy",
+    "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+    "price": 14.99
+  },
+  {
+    "id": 25,
+    "title": "Leonardo da Vinci",
+    "image": "https://prodimage.images-bn.com/pimages/9781501139154_p0_v4_s550x406.jpg",
+    "author": "Walter Isaacson",
+    "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+    "price": 9.99
+
+  }]
