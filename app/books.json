@@ -51,41 +51,40 @@
   "id": 7,
   "title": "Accidental Heroes",
   "image": "https://prodimage.images-bn.com/pimages/9781101884096_p0_v1_s192x300.jpg",
-  "author": "Daniel Steel",
   "description": "Est in vivendum comprehensam conclusionemque, alia cetero iriure no usu, te cibo deterruisset pro. Ludus epicurei quo id, ex cum iudicabit intellegebat. Ex modo deseruisse quo, mel noster menandri sententiae ea, duo et tritani malorum recteque. Nullam suscipit partiendo nec id, indoctum vulputate per ex. Et has enim habemus tibique. Cu latine electram cum, ridens propriae intellegat eu mea.",
+  "author": "Daniel Steel",
   "price": 14.99
 },
 {
   "id": 8,
   "title": "The Rock, The Road, and the Rabbi",
   "image": "https://prodimage.images-bn.com/pimages/9780785222682_p0_v1_s192x300.jpg",
-  "Author": "Kathie Lee Gifford",
   "description": "Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.",
-  "author": "Aleksander Olsen",
+  "author": "Kathie Lee Gifford",
   "price": 9.99
 },
 {
   "id": 9,
   "title": "Children of blood and bone",
   "image": "https://prodimage.images-bn.com/pimages/9781250295446_p0_v5_s192x300.jpg",
-  "author": "Tom Adeyemi",
   "description": "Qui utamur tacimates quaestio ad, quod graece omnium ius ut. Pri ut vero debitis interpretaris, qui cu mentitum adipiscing disputationi. Voluptatum mediocritatem quo ut. Fabulas dolorem ei has, quem molestie persequeris et sit.",
+  "author": "Tom Adeyemi",
   "price": 19.99
 },
 {
   "id": 10,
   "title": "Red Alert",
   "image": "https://prodimage.images-bn.com/pimages/9780316395441_p0_v2_s192x300.jpg",
-  "author": "James Patterson",
   "description": "Est in vivendum comprehensam conclusionemque, alia cetero iriure no usu, te cibo deterruisset pro. Ludus epicurei quo id, ex cum iudicabit intellegebat. Ex modo deseruisse quo, mel noster menandri sententiae ea, duo et tritani malorum recteque. Nullam suscipit partiendo nec id, indoctum vulputate per ex. Et has enim habemus tibique. Cu latine electram cum, ridens propriae intellegat eu mea.",
+  "author": "James Patterson",
   "price": 14.99
 },
 {
   "id": 11,
   "title": "Secret Empires",
   "image": "https://prodimage.images-bn.com/pimages/9780062569363_p0_v5_s192x300.jpg",
-  "author": "Clinton Cash",
   "description": "Duo at aliquid mnesarchum, nec ne impetus hendrerit. Ius id aeterno debitis atomorum, et sed feugait voluptua, brute tibique no vix. Eos modo esse ex, ei omittam imperdiet pro. Vel assum albucius incorrupte no. Vim viris prompta repudiare ne, vel ut viderer scripserit, dicant appetere argumentum mel ea. Eripuit feugait tincidunt pri ne, cu facilisi molestiae usu.",
+  "author": "Clinton Cash",
   "price": 9.99
 
 },
@@ -93,32 +92,32 @@
   "id": 12,
   "title": "Darkest Journey",
   "image": "https://prodimage.images-bn.com/pimages/9780778330134_p0_v4_s192x300.jpg",
-  "author": "Kathie Lee Gifford",
   "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+  "author": "Kathie Lee Gifford",
   "price": 9.99
 },
 {
   "id": 13,
   "title": "The Fallen",
   "image": "https://prodimage.images-bn.com/pimages/9781538761397_p0_v3_s192x300.jpg",
-  "author": "David Baldacci",
   "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+  "author": "David Baldacci",
   "price": 19.99
 },
 {
   "id": 14,
   "title": "Shoot First",
   "image": "https://prodimage.images-bn.com/pimages/9780735217201_p0_v3_s192x300.jpg",
-  "author": "Stuart Woods",
   "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+  "author": "Stuart Woods",
   "price": 14.99
 },
 {
   "id": 15,
   "title": "Dark Sacred Night",
   "image": "https://prodimage.images-bn.com/pimages/9780316484800_p0_v2_s192x300.jpg",
-  "author": "Michael Connelly",
   "description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+  "author": "Michael Connelly",
   "price": 9.99
 
 }]
